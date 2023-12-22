@@ -1,0 +1,23 @@
+<form action="/qcms/new" method="POST">
+    <div>
+        <label for="name">Nom</label>
+        <input type="text" id="name" name="name">
+    </div>
+    <div>
+        <label for="subject">Sujet</label>
+        <input type="text" id="subject" name="subject">
+    </div>
+    <div>
+        <label for="nbpoints">Nb points</label>
+        <input type="number" id="nbpoints" name="nbpoints">
+    </div>
+    <div>
+        <label for="questions">Questions</label>
+        <input type="text" id="questions" name="questions[]">
+    </div>
+    <div>
+        <label for="answers">Réponses</label>
+        <input type="text" id="answers" name="answers[]">
+    </div>
+    <input type="submit" value="Create">
+</form>

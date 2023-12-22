@@ -1,0 +1,28 @@
+<%- include('header') -%>
+
+<div>
+    <h2><%= qcm.name %></h2>
+</div>
+
+<div>
+    <p>Sujet: <%= qcm.subject %></p>
+</div>
+
+<div>
+    <p>Nombre de points: <%= qcm.nbpoints %></p>
+</div>
+
+<div>
+    <h3>Questions et Réponses</h3>
+<ul>
+    <% qcm.questions.forEach((question, index) => { %>
+        <li>
+            <p><strong>Question:</strong> <%= question %></p>
+            <p><strong>Réponse:</strong> <%= qcm.answers[index] %></p>
+        </li>
+    <% }); %>
+</ul>
+
+</div>
+
+<%- include('footer') -%>
